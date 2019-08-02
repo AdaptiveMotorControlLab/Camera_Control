@@ -1,0 +1,19 @@
+name: camera27
+channels:
+  - defaults
+dependencies:
+  - certifi=2018.11.29=py27_0
+  - pip=18.1=py27_0
+  - python=2.7.15=hcb6e200_5
+  - setuptools=40.6.3=py27_0
+  - sqlite=3.26.0=h0c8e037_0
+  - vc=9=h7299396_1
+  - vs2008_runtime=9.00.30729.1=hfaea7d5_1
+  - wheel=0.32.3=py27_0
+  - wincertstore=0.2=py27hf04cefb_0
+  - pip:
+    - ffmpy==0.2.2
+    - future==0.17.1
+    - numpy==1.16.0
+    - opencv-python==4.0.0.21
+    - nidaqmx
