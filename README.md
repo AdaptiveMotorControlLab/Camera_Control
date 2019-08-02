@@ -20,7 +20,7 @@ This software package was written by [Gary Kane](https://github.com/gkane26), po
 ## Instructions for Installation:
 
 1. Clone this repository. Open command prompt (type "cmd" into the search bar and hit enter), then type:<br/><br/>
-``git clone https://github.com/gkane26/camera_control``
+``git clone https://github.com/AdaptiveMotorControlLab/camera_control``
 
 2. Open the camera control directory, **right-click 'install1.bat' and select 'Run as administrator'**<br/><br/>
 This script will install imaging source libraries, ffmpeg for command prompt, and create a new conda environment 'camera27'. Upon completion, the window will close suddenly.
