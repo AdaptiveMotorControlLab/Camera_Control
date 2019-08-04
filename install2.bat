@@ -1,5 +1,8 @@
 echo OFF
 
+@setlocal enableextensions
+@cd /d "%~dp0"
+
 echo.
 echo.
 echo Install Imaging Source Python Package
