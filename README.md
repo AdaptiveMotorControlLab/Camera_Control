@@ -1,12 +1,12 @@
 <img src="https://images.squarespace-cdn.com/content/v1/57f6d51c9f74566f55ecf271/1564768953154-CH2E4W7M0ORYRGGZP0W0/ke17ZwdGBToddI8pDm48kHJH6WvD-K6SQJl_lpgiA4wUqsxRUqqbr1mOJYKfIPR7LoDQ9mXPOjoJoqy81S2I8N_N4V1vUb5AoIIIbLZhVYy7Mythp_T-mtop-vrsUOmeInPi9iDjx9w8K4ZfjXt2dtyDHbM6wOPdgJbmQh4Pb6c9D9xnXrxbqSawZVwoRTUNCjLISwBs8eEdxAxTptZAUg/Camera+Control-logo-black.png?format=1000w" width="450" title="camera control" alt="cam cntrl" align="center" vspace = "350">
 
-
 #### record video and system timestamps from Imaging Source USB3 cameras
 
 Python GUI + scripts to record video sync'ed to behavior. Can record from multiple imaging source camera feeds while simultaneously grabbing system timestamps for each recorded frame. One can also record timestamps from one NIDAQ card signal to sync with a behavioral task (records timestamp on the rising edge of a TTL signal).
 
 
 This software package was written by [Gary Kane](https://github.com/gkane26), post-doctoral fellow @ the [Adaptive Motor Control Lab](https://github.com/AdaptiveMotorControlLab).
+
 
 **Prerequisite Software:**
 1. Windows 10
@@ -65,7 +65,12 @@ Double click the cameraGUI.bat file on the Desktop or open command prompt, navig
     - 'Delete Video' will not save any videos of timestamp files. Preliminary video files will be deleted.
 6. To record more videos, return to step iii.
 
-## LICENSE
+## LICENSE: 
+
 
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED. Please see [here](/LICENSE) for more information.
+IMPLIED. Please see [here](/LICENSE) for more information. ![GitHub](https://img.shields.io/github/license/AdaptiveMotorControlLab/Camera_Control?color=blue)
+
+## Citation:
+
+If you find this software useful for your research, please cite: [![DOI](https://zenodo.org/badge/200101590.svg)](https://zenodo.org/badge/latestdoi/200101590)
