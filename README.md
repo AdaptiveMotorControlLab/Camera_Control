@@ -19,6 +19,8 @@ This software package was written by [Gary Kane](https://github.com/gkane26), po
 
 ## Instructions for Installation:
 
+1. Install the latest driver for your camera. You can find the driver from The Imaging Source website: https://www.theimagingsource.com/products/. **If you add new cameras to an existing system, make sure to update the driver!**
+
 1. Clone this repository. Open command prompt (type "cmd" into the search bar and hit enter), then type:<br/><br/>
 ``git clone https://github.com/AdaptiveMotorControlLab/camera_control``
 
