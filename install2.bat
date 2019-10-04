@@ -11,7 +11,7 @@ echo.
 echo.
 echo Write Shortcut File to the Desktop
 echo call activate.bat > C:%HOMEPATH%\Desktop\cameraGUI.bat
-echo call activate camera27 >> C:%HOMEPATH%\Desktop\cameraGUI.bat
+echo call activate camera36 >> C:%HOMEPATH%\Desktop\cameraGUI.bat
 echo cd %cd% >> C:%HOMEPATH%\Desktop\cameraGUI.bat
 echo python camera_control_GUI.py >> C:%HOMEPATH%\Desktop\cameraGUI.bat
 
