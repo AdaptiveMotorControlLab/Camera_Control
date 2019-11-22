@@ -44,7 +44,7 @@ class ICCam(object):
         if self.rotate != 0:
             h_r = self.cam.CreateFrameFilter(b'Rotate Flip')
             self.cam.AddFrameFilter(h_r)
-            self.cam.FilterSetParameter(h_r, 'Rotation Angle', self.rotate)
+            self.cam.FilterSetParameter(h_r, b'Rotation Angle', self.rotate)
 
         h_c = self.cam.CreateFrameFilter(b'ROI')
         self.cam.AddFrameFilter(h_c)
