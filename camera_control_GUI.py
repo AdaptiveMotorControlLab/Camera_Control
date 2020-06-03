@@ -40,8 +40,9 @@ class CamGUI(object):
         self.selectCams()
 
     def browse_output(self):
-        filepath = filedialog.askdirectory()
-        self.output.set(filepath)
+        if len(self.vid_out) == 0:
+            filepath = filedialog.askdirectory()
+            self.output.set(filepath)
 
     def init_cam(self, num):
         # create pop up window during setup
@@ -317,6 +318,9 @@ class CamGUI(object):
 
 
     def close_window(self):
+
+        if self.record_on.get():
+            return
 
         self.end_labview()
         if not self.setup:
