@@ -1,0 +1,20 @@
+name: camera36
+channels:
+  - defaults
+dependencies:
+  - certifi=2019.9.11=py36_0
+  - pip=19.2.3=py36_0
+  - python=3.6.9=h5500b2f_0
+  - setuptools=41.2.0=py36_0
+  - sqlite=3.29.0=he774522_0
+  - vc=14.1=h0510ff6_4
+  - vs2015_runtime=14.16.27012=hf0eaf9b_0
+  - wheel=0.33.6=py36_0
+  - wincertstore=0.2=py36h7fe50ca_0
+  - pip:
+    - ffmpy==0.2.2
+    - imutils==0.5.3
+    - nidaqmx==0.5.7
+    - numpy==1.16.0
+    - opencv-python==4.1.1.26
+    - six==1.12.0

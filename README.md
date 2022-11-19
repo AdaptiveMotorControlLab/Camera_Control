@@ -22,10 +22,10 @@ This software package was written by [Gary Kane](https://github.com/gkane26), po
 1. Install the latest driver for your camera. You can find the driver from The Imaging Source website: https://www.theimagingsource.com/products/. **If you add new cameras to an existing system, make sure to update the driver!**
 
 1. Clone this repository. Open command prompt (type "cmd" into the search bar and hit enter), then type:<br/><br/>
-``git clone https://github.com/AdaptiveMotorControlLab/camera_control``
+``git clone https://github.com/AdaptiveMotorControlLab/Camera_Control``
 
 2. Open the camera control directory, **right-click 'install1.bat' and select 'Run as administrator'**<br/><br/>
-This script will install imaging source libraries, ffmpeg for command prompt, and create a new conda environment 'camera27'. Upon completion, the window will close suddenly.
+This script will install imaging source libraries, ffmpeg for command prompt, and create a new conda environment 'camera36'. Upon completion, the window will close suddenly.
 
 3. Run 'install2.bat'.<br/><br/>
 This script will finish setting up the conda environment and create a desktop shortcut to open the GUI.
@@ -35,7 +35,7 @@ This script will finish setting up the conda environment and create a desktop sh
         - name = camera name
         - crop = cropping parameters
         - rotate = rotation angle of image
-        - exposure = integer exposure values; can edit this in the GUI
+        - exposure = exposure in ms; can edit this in the GUI
         - output_dir = default directory to save videos; can edit this in the GUI
         - Example:
         
@@ -43,7 +43,7 @@ This script will finish setting up the conda environment and create a desktop sh
               cam_0 = {'name' : 'Cog Rig',
                       'crop' : {'top' : 150, 'left' : 225, 'height' : 250, 'width' : 300},
                       'rotate' : 0,
-                      'exposure' : -14,
+                      'exposure' : .003,
                       'output_dir' : 'C:/Users/user1/Desktop/video'}
               
               

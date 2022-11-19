@@ -20,13 +20,13 @@ out = os.path.normpath(path + '/camera_details.json')
 cam_0 = {'name' : 'Cog Rig',
         'crop' : {'top' : 150, 'left' : 225, 'height' : 250, 'width' : 300},
         'rotate' : 0,
-        'exposure' : -14,
+        'exposure' : .003,
         'output_dir' : 'C:/Users/user1/Desktop/video/RIG6_DATA/cog_rig/video'}
 
 cam_1 = {'name' : 'Neuro Rig',
         'crop' : {'top' : 200, 'left' : 140, 'height' : 325, 'width' : 200},
         'rotate' : 90,
-        'exposure' : -6,
+        'exposure' : .003,
         'output_dir' : 'C:/Users/user1/Desktop/video/RIG6_DATA/cog_rig/video'}
 
 subs = ['test1', 'test2', 'test3'] # optional, can manually enter subject for each session.

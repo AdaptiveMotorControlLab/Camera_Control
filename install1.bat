@@ -31,6 +31,6 @@ powershell [System.Environment]::SetEnvironmentVariable('PATH', '%NEW_PATH%', 'M
 
 echo.
 echo.
-echo Create New Conda Environment: camera27
+echo Create New Conda Environment: camera36
 call activate.bat
-conda env create -f camera_env.yaml
+conda env create -f camera_env.yml

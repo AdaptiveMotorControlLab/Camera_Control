@@ -8,9 +8,7 @@ https://github.com/AdaptiveMotorControlLab
 GUI to record from imaging source cameras during experiments
 """
 
-from Tkinter import Entry, Label, Button, StringVar, IntVar, Tk, END, Radiobutton
-import tkFileDialog
-import ttk
+from tkinter import Entry, Label, Button, StringVar, IntVar, Tk, END, Radiobutton, filedialog, ttk
 import numpy as np
 import datetime
 import os
@@ -21,7 +19,6 @@ import ffmpy
 import threading
 import json
 import nidaqmx
-import write_camera_details
 
 class CamGUI(object):
 
@@ -43,8 +40,9 @@ class CamGUI(object):
         self.selectCams()
 
     def browse_output(self):
-        filepath = tkFileDialog.askdirectory()
-        self.output.set(filepath)
+        if len(self.vid_out) == 0:
+            filepath = filedialog.askdirectory()
+            self.output.set(filepath)
 
     def init_cam(self, num):
         # create pop up window during setup
@@ -92,7 +90,7 @@ class CamGUI(object):
             cam_check_window.mainloop()
             cam_check_window.destroy()
         else:
-            self.cam[num].set_exposure(int(self.exposure[num].get()))
+            self.cam[num].set_exposure(float(self.exposure[num].get()))
 
     def lv_interrupt(self, task_handle, signal_type, callback_data):
 
@@ -247,6 +245,7 @@ class CamGUI(object):
             self.vid_start_time = time.time()
             t = []
             for i in range(len(self.cam)):
+                self.cam[i].set_frame_rate(int(self.fps.get()))
                 t.append(threading.Thread(target=self.record_on_thread, args=(i,)))
                 t[-1].daemon = True
                 t[-1].start()
@@ -319,6 +318,9 @@ class CamGUI(object):
 
 
     def close_window(self):
+
+        if self.record_on.get():
+            return
 
         self.end_labview()
         if not self.setup:
