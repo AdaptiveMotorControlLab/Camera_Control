@@ -12,15 +12,14 @@ TISGrabberSetup_3.4.0.51.exe
 echo.
 echo.
 echo Download FFMPEG...
-curl https://ffmpeg.zeranoe.com/builds/win64/static/ffmpeg-20190730-a0c1970-win64-static.zip -o C:%HOMEPATH%\Downloads\ffmpeg-20190730-a0c1970-win64-static.zip
-
+curl --location https://archive.org/download/zeranoe/win64/static/ffmpeg-20190730-a0c1970-win64-static.zip -o C:%HOMEPATH%\Downloads\ffmpeg-20190730-a0c1970-win64-static.zip
 
 echo.
 echo.
 echo Install FFMPEG...
 powershell Expand-Archive C:%HOMEPATH%\Downloads\ffmpeg-20190730-a0c1970-win64-static.zip -DestinationPath C:%HOMEPATH%\Downloads\ffmpeg
-move C:%HOMEPATH%\Downloads\ffmpeg\ffmpeg-20190730-a0c1970-win64-static "C:\Program Files\ffmpeg"
-
+xcopy C:%HOMEPATH%\Downloads\ffmpeg\ffmpeg-20190730-a0c1970-win64-static\* "C:\Program Files\ffmpeg" /e /i
+rd C:%HOMEPATH%\Downloads\ffmpeg\ffmpeg-20190730-a0c1970-win64-static /s /q
 
 echo.
 echo.

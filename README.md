@@ -27,10 +27,12 @@ This software package was written by [Gary Kane](https://github.com/gkane26), po
 2. Open the camera control directory, **right-click 'install1.bat' and select 'Run as administrator'**<br/><br/>
 This script will install imaging source libraries, ffmpeg for command prompt, and create a new conda environment 'camera36'. Upon completion, the window will close suddenly.
 
-3. Run 'install2.bat'.<br/><br/>
+3. Download and install IC Capture from imaging source: https://www.theimagingsource.com/support/downloads-for-windows/end-user-software/iccapture/. Launch it with your camera plugged in. Go to Device/Properties/Exposure and untoggle all 'auto' parameters. Otherwise the camera exposure won't be adjustable from the GUI.
+
+4. Run 'install2.bat'.<br/><br/>
 This script will finish setting up the conda environment and create a desktop shortcut to open the GUI.
 
-4. Edit the 'write_camera_details.py' script according to your system's camera configuration. A template is provided (write_camera_details_TEMPLATE.py), please do not edit the template. The 'write_camera_details.py' script will write a dictionary to the file 'camera_details.json' containing the following fields:
+5. Edit the 'write_camera_details.py' script according to your system's camera configuration. A template is provided (write_camera_details_TEMPLATE.py), please do not edit the template. The 'write_camera_details.py' script will write a dictionary to the file 'camera_details.json' containing the following fields:
     - a dictionary for each imaging source camera with the fields:
         - name = camera name
         - crop = cropping parameters
